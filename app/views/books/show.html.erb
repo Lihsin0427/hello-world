@@ -15,5 +15,12 @@
   <%= @book.publish_date %>
 </p>
 
+<p>
+  <strong>Isbn:</strong>
+  <%= @book.isbn %>
+</p>
+
+<%= image_tag @book.image_url %><br/>
+
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>
