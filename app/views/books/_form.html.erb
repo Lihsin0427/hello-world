@@ -29,6 +29,11 @@
     <%= form.text_field :isbn %>
   </div>  
 
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image, accept: "image/gif, image/jpeg, image/gif, image/png" %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
